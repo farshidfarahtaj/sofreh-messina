@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sofreh Messina</string>
+    
+    <!-- Common -->
+    <string name="loading">Caricamento…</string>
+    <string name="error">Errore</string>
+    <string name="retry">Riprova</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Annulla</string>
+    <string name="confirm">Conferma</string>
+    <string name="back">Indietro</string>
+    <string name="unknown_error">Si è verificato un errore sconosciuto</string>
+    <string name="general_error">Si è verificato un errore. Riprova più tardi.</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_menu">Menu</string>
+    <string name="nav_orders">Ordini</string>
+    <string name="nav_profile">Profilo</string>
+    
+    <!-- Authentication -->
+    <string name="sign_in">Accedi</string>
+    <string name="sign_up">Registrati</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Conferma password</string>
+    <string name="forgot_password">Password dimenticata?</string>
+    <string name="forgot_password_instructions">Inserisci il tuo indirizzo email e ti invieremo un link per reimpostare la password.</string>
+    <string name="forgot_password_submit">Invia</string>
+    <string name="forgot_password_back">Torna al login</string>
+    <string name="forgot_password_error">Errore reimpostazione password</string>
+    <string name="forgot_password_success">Link per reimpostare la password inviato con successo</string>
+    <string name="forgot_password_check_email">Controlla la tua email</string>
+    <string name="forgot_password_link_expired">Il link per reimpostare la password è scaduto</string>
+    <string name="forgot_password_new_password">Nuova password</string>
+    <string name="forgot_password_confirm_new_password">Conferma nuova password</string>
+    <string name="forgot_password_reset_success">Password reimpostata con successo</string>
+    <string name="forgot_password_email_empty">Inserisci il tuo indirizzo email</string>
+    <string name="forgot_password_email_invalid">Inserisci un indirizzo email valido</string>
+    <string name="forgot_password_reset_button">Reimposta password</string>
+    <string name="forgot_password_title">Recupera password</string>
+    <string name="create_account">Crea account</string>
+    <string name="passwords_do_not_match">Le password non corrispondono</string>
+    <string name="already_have_account">Hai già un account? Accedi</string>
+    <string name="register">Registrati</string>
+    <string name="login_to_checkout">Devi accedere per procedere con il checkout</string>
+    
+    <!-- Settings -->
+    <string name="settings">Impostazioni</string>
+    <string name="theme">Tema</string>
+    <string name="theme_description">Scegli il tuo tema preferito</string>
+    <string name="theme_light">Chiaro</string>
+    <string name="theme_dark">Scuro</string>
+    <string name="theme_system">Predefinito di sistema</string>
+    <string name="dark_mode">Modalità scura</string>
+    <string name="dark_mode_description">Attiva il tema scuro per l\'app</string>
+    <string name="theme_selection">Selezione tema</string>
+    <string name="theme_auto">Cambio automatico</string>
+    <string name="theme_auto_description">Cambia automaticamente tra tema chiaro e scuro in base all\'ora del giorno</string>
+    <string name="theme_applied">Tema applicato con successo</string>
+    <string name="theme_custom">Tema personalizzato</string>
+    <string name="theme_custom_colors">Colori personalizzati</string>
+    <string name="theme_accent_color">Colore di accento</string>
+    <string name="theme_primary_color">Colore primario</string>
+    <string name="theme_secondary_color">Colore secondario</string>
+    <string name="theme_background_color">Colore di sfondo</string>
+    <string name="theme_text_color">Colore del testo</string>
+    <string name="theme_save">Salva tema</string>
+    <string name="theme_reset">Ripristina tema</string>
+    <string name="theme_preview">Anteprima tema</string>
+    <string name="theme_current">Tema corrente</string>
+    <string name="theme_brightness">Luminosità</string>
+    <string name="theme_contrast">Contrasto</string>
+    <string name="theme_font_size">Dimensione carattere</string>
+    <string name="theme_font_family">Famiglia carattere</string>
+    <string name="theme_animation_speed">Velocità animazioni</string>
+    <string name="theme_restored">Impostazioni tema ripristinate</string>
+    <string name="theme_saved">Impostazioni tema salvate</string>
+    <string name="notifications">Notifiche</string>
+    <string name="notifications_description">Ricevi notifiche push per ordini e aggiornamenti</string>
+    <string name="email_notifications">Notifiche email</string>
+    <string name="email_notifications_description">Ricevi notifiche email per ordini e aggiornamenti</string>
+    <string name="language">Lingua</string>
+    <string name="language_description">Scegli la tua lingua preferita</string>
+    <string name="clear_data">Cancella dati</string>
+    <string name="clear_data_description">Elimina tutti i dati locali dell\'app</string>
+    <string name="clear_data_confirmation">Questa azione eliminerà tutti i dati locali salvati. Non è reversibile.</string>
+    <string name="clear">Cancella</string>
+    <string name="terms_of_service">Termini di servizio</string>
+    <string name="privacy_policy">Informativa sulla privacy</string>
+    <string name="app_logo_description">Logo Sofreh Messina</string>
+    <string name="account">Account</string>
+    <string name="appearance">Aspetto</string>
+    <string name="app_appearance_theme">Tema dell\'app</string>
+    <string name="app_language">Lingua dell\'app</string>
+    <string name="order_updates">Aggiornamenti ordini</string>
+    <string name="notifications_about_orders">Notifiche sui tuoi ordini</string>
+    <string name="promotional_offers">Offerte promozionali</string>
+    <string name="notifications_about_offers">Notifiche sulle offerte speciali</string>
+    <string name="about">Info</string>
+    <string name="read_terms_of_service">Leggi i nostri termini di servizio</string>
+    <string name="read_privacy_policy">Leggi la nostra informativa sulla privacy</string>
+    <string name="version_and_information">Versione %1$s</string>
+    <string name="security">Sicurezza</string>
+    <string name="auto_logout">Logout automatico</string>
+    <string name="logout_when_app_closes">Logout automatico alla chiusura dell\'app</string>
+    <string name="auto_logout_description">Logout automatico quando l\'app viene chiusa. Se attivi questa opzione, dovrai accedere nuovamente ogni volta che riapri l\'app.</string>
+    
+    <!-- Legal Content -->
+    <string name="terms_title">Termini di servizio</string>
+    <string name="privacy_title">Informativa sulla privacy</string>
+    <string name="legal_close">Chiudi</string>
+    <string name="legal_last_updated">Ultimo aggiornamento: Dicembre 2024</string>
+    <string name="terms_content">Benvenuto in Sofreh Messina! Utilizzando i nostri servizi, accetti questi termini. I nostri contenuti sono forniti senza garanzie. Non siamo responsabili per danni derivanti dall\'uso della nostra app. I contenuti potrebbero contenere errori e possono cambiare senza preavviso. Questi termini sono governati dalle leggi italiane.</string>
+    <string name="privacy_content">In Sofreh Messina, raccogliamo informazioni personali come nome, email e indirizzo per elaborare ordini e migliorare i nostri servizi. Implementiamo misure di sicurezza per proteggere i tuoi dati. Hai il diritto di accedere, correggere o cancellare le tue informazioni. Potremmo aggiornare questa politica occasionalmente. Per domande, contattaci a privacy@sofrehmessina.com.</string>
+    
+    <!-- Language Settings -->
+    <string name="language_persian">Persiano</string>
+    <string name="language_english">Inglese</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_selection">Selezione lingua</string>
+    <string name="language_change_restart">Per applicare il cambio di lingua, l\'app deve essere riavviata. Vuoi riavviare ora?</string>
+    <string name="restart_now">Riavvia ora</string>
+    <string name="restart_later">Riavvia più tardi</string>
+    <string name="english">Inglese</string>
+    <string name="persian">Persiano</string>
+    <string name="italian">Italiano</string>
+    <string name="display_name">Nome visualizzato</string>
+    <string name="your_name_shown_to_others">Il tuo nome mostrato agli altri</string>
+    <string name="receive_emails_about_account">Ricevi email sul tuo account</string>
+    
+    <!-- Home Screen -->
+    <string name="app_title">Sofreh Cibo Persiano (Messina)</string>
+    <string name="app_title_first_line">Sofreh</string>
+    <string name="app_title_second_line">Cibo Persiano</string>
+    <string name="food_categories">Categorie di cibo</string>
+    <string name="menu">Menu</string>
+    <string name="cart">Carrello</string>
+    <string name="special_offers">Offerte speciali</string>
+    
+    <!-- Cart Screen -->
+    <string name="your_cart">Il tuo carrello</string>
+    <string name="clear_cart">Svuota carrello</string>
+    <string name="clear_cart_confirmation">Sei sicuro di voler rimuovere tutti gli articoli dal carrello?</string>
+    <string name="cart_cleared">Carrello svuotato</string>
+    <string name="total">Totale</string>
+    <string name="you_save">Risparmi: %1$s</string>
+    <string name="proceed_to_checkout">Procedi al checkout</string>
+    <string name="guest_access_limited">Accesso ospite limitato</string>
+    <string name="need_account_to_order">Per effettuare un ordine devi creare un account o accedere.</string>
+    <string name="sign_in_or_register">Accedi o registrati</string>
+    <string name="cart_empty">Il tuo carrello è vuoto</string>
+    <string name="empty_cart">Il tuo carrello è vuoto</string>
+    <string name="empty_cart_message">Aggiungi alcuni articoli al tuo carrello</string>
+    <string name="add_items_to_cart">Aggiungi alcuni deliziosi piatti per iniziare</string>
+    <string name="description">Descrizione</string>
+    <string name="special_instructions_cart">Istruzioni speciali</string>
+    <string name="add_to_cart">Aggiungi al carrello</string>
+    <string name="added_to_cart_success">Aggiunto al carrello!</string>
+    <string name="add_notes_for_order">Aggiungi note per questo ordine...</string>
+    <string name="remove_item">Rimuovi articolo</string>
+    <string name="increase_quantity">Aumenta quantità</string>
+    <string name="decrease_quantity">Diminuisci quantità</string>
+    <string name="savings">Risparmi</string>
+    
+    <!-- Profile Screen -->
+    <string name="my_profile">Il mio profilo</string>
+    <string name="save_profile">Salva</string>
+    <string name="edit">Modifica</string>
+    <string name="personal_information">Informazioni personali</string>
+    <string name="name">Nome</string>
+    <string name="family_name">Cognome</string>
+    <string name="phone_number">Numero di telefono</string>
+    <string name="address">Indirizzo</string>
+    <string name="postal_code">Codice postale</string>
+    <string name="notification_preferences">Preferenze notifiche</string>
+    <string name="receive_email_notifications">Ricevi notifiche email</string>
+    <string name="receive_push_notifications">Ricevi notifiche push</string>
+    <string name="account_information">Informazioni account</string>
+    <string name="account_type">Tipo di account</string>
+    <string name="last_login">Ultimo accesso</string>
+    <string name="last_password_change">Ultima modifica password</string>
+    <string name="password_strength">Sicurezza password</string>
+    <string name="change_password">Cambia password</string>
+    <string name="reset_password">Reimposta password</string>
+    <string name="sign_out">Esci</string>
+    <string name="reset_password_title">Reimposta password</string>
+    <string name="reset_password_message">Un link per reimpostare la password sarà inviato al tuo indirizzo email (%1$s). Vuoi continuare?</string>
+    <string name="send_reset_link">Invia link di reset</string>
+    <string name="role_label">Ruolo: %1$s</string>
+    <string name="phone">Telefono</string>
+    <string name="password_strength_very_weak">Molto debole</string>
+    <string name="password_strength_weak">Debole</string>
+    <string name="password_strength_fair">Discreta</string>
+    <string name="password_strength_good">Buona</string>
+    <string name="password_strength_strong">Forte</string>
+    <string name="password_strength_very_strong">Molto forte</string>
+    <string name="password_reset_email_sent">Email di reset password inviata con successo</string>
+    <string name="password_mismatch">Le password non corrispondono</string>
+    <string name="password_too_short">La password deve essere di almeno 8 caratteri</string>
+    <string name="password_too_weak">La password deve includere lettere maiuscole, minuscole, numeri e simboli</string>
+    <string name="password_requirements">La password deve essere di almeno 8 caratteri e includere una lettera maiuscola, una minuscola, un numero e un simbolo</string>
+    <string name="guest_user">Utente ospite</string>
+    
+    <!-- Menu Screen -->
+    <string name="menu_title">Menu</string>
+    <string name="categories">Categorie</string>
+    <string name="all_menu_items">Tutti gli articoli del menu</string>
+    <string name="all_food_items">Tutti i piatti</string>
+    <string name="all">Tutti</string>
+    <string name="category_list">Lista categorie</string>
+    <string name="price_format">₺%1$s</string>
+    <string name="no_food_items_found">Nessun piatto trovato in questa categoria</string>
+    <string name="out_of_stock">Esaurito</string>
+    <string name="item_currently_unavailable">Questo piatto non è attualmente disponibile</string>
+    <string name="uncategorized">Non categorizzato</string>
+    <string name="sold_out">Esaurito</string>
+    
+    <!-- Navigation Drawer -->
+    <string name="welcome_to_sofrehmessina">Benvenuto in Sofreh Messina</string>
+    <string name="home">Home</string>
+    <string name="profile">Profilo</string>
+    <string name="my_orders">I miei ordini</string>
+    <string name="admin">Admin</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="manage_categories">Gestisci categorie</string>
+    <string name="manage_food_items">Gestisci articoli</string>
+    <string name="manage_orders">Gestisci ordini</string>
+    <string name="contact_us">Contattaci</string>
+    <string name="login_register">Accedi / Registrati</string>
+    
+    <!-- Order History Screen -->
+    <string name="order_history">Cronologia ordini</string>
+    <string name="all_orders">Tutti</string>
+    <string name="no_orders_found">Nessun ordine trovato</string>
+    <string name="order_number">Ordine #%1$s</string>
+    <string name="order_item_quantity">%1$dx articolo #%2$s</string>
+    <string name="order_total">Totale</string>
+    <string name="no_orders_yet">Non hai ancora ordini</string>
+    <string name="browse_menu">Sfoglia menu</string>
+    <string name="order_details">Dettagli ordine</string>
+    <string name="items">Articoli</string>
+    <string name="item_quantity">%1$dx %2$s</string>
+    <string name="item_note">Nota: %1$s</string>
+    <string name="order_items_count">%1$d articoli • %2$s</string>
+    <string name="notes">Note: %1$s</string>
+    <string name="orders_close">Chiudi</string>
+    
+    <!-- Category Details Screen -->
+    <string name="no_food_items">Nessun piatto trovato</string>
+    <string name="check_back_later">Torna più tardi per nuove aggiunte</string>
+    <string name="back_to_categories">Torna alle categorie</string>
+    <string name="category">Categoria</string>
+    <string name="discount_details">Dettagli sconto</string>
+    <string name="buy_x_get_discount">Acquista %1$d o più articoli per ottenere questo sconto</string>
+    
+    <!-- Checkout Screen -->
+    <string name="checkout">Checkout</string>
+    <string name="delivery_address">Indirizzo di consegna</string>
+    <string name="special_instructions">Istruzioni speciali (opzionale)</string>
+    <string name="place_order">Effettua ordine</string>
+    <string name="order_placed">Ordine effettuato con successo</string>
+    <string name="order_success_message">Il tuo ordine è stato effettuato con successo. Puoi tracciare il tuo ordine nella sezione ordini.</string>
+    <string name="order_error">Errore nell\'ordine</string>
+    <string name="order_error_message">Si è verificato un errore durante il tuo ordine. Riprova.</string>
+    <string name="complete_your_order">Completa il tuo ordine</string>
+    <string name="checkout_with_discounts">Checkout con sconti: %1$s</string>
+    <string name="order_without_discounts">Ordine senza sconti: %1$s</string>
+    <string name="add_more_items_for_discounts">Aggiungi più articoli per attivare gli sconti!</string>
+    <string name="please_enter_delivery_address">Inserisci un indirizzo di consegna per continuare</string>
+    <string name="your_cart_empty">Il tuo carrello è vuoto</string>
+    <string name="order_summary">Riepilogo ordine</string>
+    <string name="save_amount">Risparmia %1$s</string>
+    <string name="discount_info">Informazioni sconto</string>
+    <string name="save_discount">Risparmia %1$s</string>
+    <string name="note">Nota: %1$s</string>
+    <string name="subtotal">Subtotale:</string>
+    <string name="discount">Sconto:</string>
+    <string name="discount_summary">Riepilogo sconto</string>
+    <string name="general">Generale</string>
+    <string name="total_savings">Risparmio totale:</string>
+    <string name="payment_method_cash_on_delivery">Metodo di pagamento: Contanti alla consegna</string>
+    <string name="delivery_details">Dettagli consegna</string>
+    <string name="any_special_delivery_instructions">Eventuali istruzioni speciali per la consegna...</string>
+    <string name="each_item">Ogni articolo</string>
+    <string name="item_total">Totale articolo</string>
+    <string name="debug">Debug: totalSavings = %1$s | Items: %2$d | Address: %3$s</string>
+    <string name="confirm_order">Conferma ordine</string>
+    <string name="confirm_order_message">Sei sicuro di voler effettuare questo ordine?</string>
+    <string name="view_orders">Visualizza ordini</string>
+    <string name="limited_time_offer">Offerta a tempo limitato</string>
+    <string name="item_discounts">Sconti articolo</string>
+    <string name="total_amount">Importo totale</string>
+    
+    <!-- Discount countdown strings -->
+    <string name="discount_countdown">Lo sconto termina presto</string>
+    <string name="ends_in">Termina in %1$s</string>
+    <string name="hours_minutes">%1$dh %2$dm</string>
+    
+    <!-- Enhanced UI strings -->
+    <string name="sign_in_to_continue">Accedi per continuare</string>
+    <string name="email_required">Email richiesta</string>
+    <string name="fill_details_below">Compila i tuoi dati qui sotto</string>
+    <string name="welcome_to_sofreh_persian_food">Benvenuto a Sofreh Cucina Persiana</string>
+    <string name="registration_success_message">Il tuo account è stato creato con successo. Accedi con le tue credenziali.</string>
+    
+    <!-- Discount explanation strings -->
+    <string name="buy_x_or_more_for_discount">Acquista %1$s o più per %2$s%% di sconto</string>
+    <string name="limited_time_offer_discount">Offerta a tempo limitato: %1$s%% di sconto</string>
+    
+    <!-- Coupon related strings -->
+    <string name="have_a_coupon">Hai un Coupon?</string>
+    <string name="enter_coupon_code">Inserisci codice coupon</string>
+    <string name="apply">Applica</string>
+    <string name="coupon_applied">Coupon Applicato</string>
+    <string name="remove_coupon">Rimuovi</string>
+    <string name="invalid_coupon">Codice coupon non valido</string>
+    <string name="coupon_discount">Sconto Coupon</string>
+    
+    <!-- Food details screen -->
+    <string name="food_details">Dettagli Piatto</string>
+    <string name="favorite">Preferito</string>
+    <string name="available">Disponibile</string>
+    <string name="unavailable">Non Disponibile</string>
+    <string name="quantity">Quantità</string>
+    <string name="special_instructions_hint">Aggiungi istruzioni speciali qui...</string>
+    
+    <!-- Order Status -->
+    <string name="status_pending">IN ATTESA</string>
+    <string name="status_confirmed">CONFERMATO</string>
+    <string name="status_preparing">IN PREPARAZIONE</string>
+    <string name="status_ready">PRONTO</string>
+    <string name="status_delivered">CONSEGNATO</string>
+    <string name="status_cancelled">ANNULLATO</string>
+</resources> 

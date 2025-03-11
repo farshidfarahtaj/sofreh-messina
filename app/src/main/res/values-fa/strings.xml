@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سفره مسینا</string>
+    
+    <!-- Common -->
+    <string name="loading">در حال بارگذاری…</string>
+    <string name="error">خطا</string>
+    <string name="retry">مجددا تلاش کنید</string>
+    <string name="ok">تایید</string>
+    <string name="cancel">لغو</string>
+    <string name="confirm">تایید</string>
+    <string name="back">بازگشت</string>
+    <string name="unknown_error">خطای ناشناخته رخ داده است</string>
+    <string name="general_error">خطایی رخ داده است. لطفاً بعداً دوباره امتحان کنید.</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">خانه</string>
+    <string name="nav_menu">منو</string>
+    <string name="nav_orders">سفارشات</string>
+    <string name="nav_profile">پروفایل</string>
+    
+    <!-- Authentication -->
+    <string name="sign_in">ورود</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="email">ایمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="confirm_password">تایید رمز عبور</string>
+    <string name="forgot_password">رمز عبور را فراموش کرده‌اید؟</string>
+    <string name="forgot_password_instructions">آدرس ایمیل خود را وارد کنید و ما یک لینک برای بازنشانی رمز عبور برای شما ارسال خواهیم کرد.</string>
+    <string name="forgot_password_submit">ارسال</string>
+    <string name="forgot_password_back">بازگشت به صفحه ورود</string>
+    <string name="forgot_password_error">خطا در بازنشانی رمز عبور</string>
+    <string name="forgot_password_success">لینک بازنشانی رمز عبور با موفقیت ارسال شد</string>
+    <string name="forgot_password_check_email">لطفاً ایمیل خود را بررسی کنید</string>
+    <string name="forgot_password_link_expired">لینک بازنشانی رمز عبور منقضی شده است</string>
+    <string name="forgot_password_new_password">رمز عبور جدید</string>
+    <string name="forgot_password_confirm_new_password">تأیید رمز عبور جدید</string>
+    <string name="forgot_password_reset_success">رمز عبور با موفقیت بازنشانی شد</string>
+    <string name="forgot_password_email_empty">لطفاً آدرس ایمیل خود را وارد کنید</string>
+    <string name="forgot_password_email_invalid">لطفاً یک آدرس ایمیل معتبر وارد کنید</string>
+    <string name="forgot_password_reset_button">بازنشانی رمز عبور</string>
+    <string name="forgot_password_title">بازیابی رمز عبور</string>
+    <string name="create_account">ایجاد حساب کاربری</string>
+    <string name="passwords_do_not_match">رمزهای عبور مطابقت ندارند</string>
+    <string name="already_have_account">قبلاً حساب کاربری دارید؟ وارد شوید</string>
+    <string name="register">ثبت نام</string>
+    <string name="login_to_checkout">برای ادامه با تکمیل سفارش، ابتدا باید وارد شوید</string>
+    
+    <!-- Settings -->
+    <string name="settings">تنظیمات</string>
+    <string name="theme">تم</string>
+    <string name="theme_description">تم مورد نظر خود را انتخاب کنید</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تیره</string>
+    <string name="theme_system">پیش‌فرض سیستم</string>
+    <string name="dark_mode">حالت تیره</string>
+    <string name="dark_mode_description">فعال‌سازی تم تیره برای برنامه</string>
+    <string name="theme_selection">انتخاب تم</string>
+    <string name="theme_auto">تغییر خودکار</string>
+    <string name="theme_auto_description">تغییر خودکار بین تم روشن و تیره بر اساس زمان روز</string>
+    <string name="theme_applied">تم با موفقیت اعمال شد</string>
+    <string name="theme_custom">تم سفارشی</string>
+    <string name="theme_custom_colors">رنگ‌های سفارشی</string>
+    <string name="theme_accent_color">رنگ تاکیدی</string>
+    <string name="theme_primary_color">رنگ اصلی</string>
+    <string name="theme_secondary_color">رنگ ثانویه</string>
+    <string name="theme_background_color">رنگ پس‌زمینه</string>
+    <string name="theme_text_color">رنگ متن</string>
+    <string name="theme_save">ذخیره تم</string>
+    <string name="theme_reset">بازنشانی تم</string>
+    <string name="theme_preview">پیش‌نمایش تم</string>
+    <string name="theme_current">تم فعلی</string>
+    <string name="theme_brightness">روشنایی</string>
+    <string name="theme_contrast">کنتراست</string>
+    <string name="theme_font_size">اندازه فونت</string>
+    <string name="theme_font_family">خانواده فونت</string>
+    <string name="theme_animation_speed">سرعت انیمیشن</string>
+    <string name="theme_restored">تنظیمات تم به حالت پیش‌فرض بازگردانده شد</string>
+    <string name="theme_saved">تنظیمات تم ذخیره شد</string>
+    <string name="notifications">اعلان‌ها</string>
+    <string name="notifications_description">دریافت اعلان‌های پوش برای سفارشات و به‌روزرسانی‌ها</string>
+    <string name="email_notifications">اعلان‌های ایمیلی</string>
+    <string name="email_notifications_description">دریافت اعلان‌های ایمیلی برای سفارشات و به‌روزرسانی‌ها</string>
+    <string name="language">زبان</string>
+    <string name="language_description">زبان مورد نظر خود را انتخاب کنید</string>
+    <string name="clear_data">پاک کردن داده‌ها</string>
+    <string name="clear_data_description">حذف تمام داده‌های محلی برنامه</string>
+    <string name="clear_data_confirmation">این کار تمام داده‌های ذخیره شده محلی را حذف می‌کند. این عمل قابل بازگشت نیست.</string>
+    <string name="clear">پاک کردن</string>
+    <string name="terms_of_service">شرایط استفاده از خدمات</string>
+    <string name="privacy_policy">سیاست حفظ حریم خصوصی</string>
+    <string name="app_logo_description">لوگوی سفره مسینا</string>
+    <string name="account">حساب کاربری</string>
+    <string name="appearance">ظاهر</string>
+    <string name="app_appearance_theme">تم ظاهری برنامه</string>
+    <string name="app_language">زبان برنامه</string>
+    <string name="order_updates">به‌روزرسانی‌های سفارش</string>
+    <string name="notifications_about_orders">اعلان‌ها در مورد سفارش‌های شما</string>
+    <string name="promotional_offers">پیشنهادات تبلیغاتی</string>
+    <string name="notifications_about_offers">اعلان‌ها در مورد پیشنهادات ویژه</string>
+    <string name="about">درباره</string>
+    <string name="read_terms_of_service">خواندن شرایط استفاده از خدمات ما</string>
+    <string name="read_privacy_policy">خواندن سیاست حفظ حریم خصوصی ما</string>
+    <string name="version_and_information">نسخه %1$s</string>
+    <string name="security">امنیت</string>
+    <string name="auto_logout">خروج خودکار</string>
+    <string name="logout_when_app_closes">خروج خودکار هنگام بستن برنامه</string>
+    <string name="auto_logout_description">خروج خودکار هنگام بستن برنامه. با فعال کردن این گزینه، هر بار که برنامه را مجدداً باز می‌کنید، باید دوباره وارد شوید.</string>
+    
+    <!-- Legal Content -->
+    <string name="terms_title">شرایط استفاده از خدمات</string>
+    <string name="privacy_title">سیاست حفظ حریم خصوصی</string>
+    <string name="legal_close">بستن</string>
+    <string name="legal_last_updated">آخرین به‌روزرسانی: اسفند 1403</string>
+    <string name="terms_content">به سفره مسینا خوش آمدید! با استفاده از خدمات ما، شما با این شرایط موافقت می‌کنید. محتوای ما بدون هیچ ضمانتی ارائه می‌شود. ما مسئول خسارات ناشی از استفاده از برنامه ما نیستیم. محتوا ممکن است شامل خطا باشد و می‌تواند بدون اطلاع قبلی تغییر کند. این شرایط تحت قوانین ایتالیا اداره می‌شوند.</string>
+    <string name="privacy_content">در سفره مسینا، ما اطلاعات شخصی مانند نام، ایمیل و آدرس را برای پردازش سفارشات و بهبود خدمات خود جمع‌آوری می‌کنیم. ما اقدامات امنیتی را برای محافظت از داده‌های شما اجرا می‌کنیم. شما حق دسترسی، اصلاح یا حذف اطلاعات خود را دارید. ما ممکن است این سیاست را گاهی اوقات به‌روزرسانی کنیم. با سؤالات با ما از طریق privacy@sofrehmessina.com تماس بگیرید.</string>
+    
+    <!-- Language Settings -->
+    <string name="language_persian">فارسی</string>
+    <string name="language_english">انگلیسی</string>
+    <string name="language_italian">ایتالیایی</string>
+    <string name="language_selection">انتخاب زبان</string>
+    <string name="language_change_restart">برای اعمال تغییر زبان، برنامه نیاز به راه‌اندازی مجدد دارد. آیا می‌خواهید اکنون راه‌اندازی مجدد شود؟</string>
+    <string name="restart_now">اکنون راه‌اندازی مجدد شود</string>
+    <string name="restart_later">بعداً راه‌اندازی مجدد شود</string>
+    <string name="english">انگلیسی</string>
+    <string name="persian">فارسی</string>
+    <string name="italian">ایتالیایی</string>
+    <string name="display_name">نام نمایشی</string>
+    <string name="your_name_shown_to_others">نام شما که به دیگران نمایش داده می‌شود</string>
+    <string name="receive_emails_about_account">دریافت ایمیل‌ها در مورد حساب کاربری شما</string>
+    
+    <!-- Home Screen -->
+    <string name="app_title">غذای ایرانی سفره (مسینا)</string>
+    <string name="app_title_first_line">سفره</string>
+    <string name="app_title_second_line">غذای ایرانی</string>
+    <string name="food_categories">دسته‌بندی‌های غذا</string>
+    <string name="menu">منو</string>
+    <string name="cart">سبد خرید</string>
+    <string name="special_offers">پیشنهادات ویژه</string>
+    
+    <!-- Cart Screen -->
+    <string name="your_cart">سبد خرید شما</string>
+    <string name="clear_cart">پاک کردن سبد خرید</string>
+    <string name="clear_cart_confirmation">آیا مطمئن هستید که می‌خواهید همه موارد را از سبد خرید حذف کنید؟</string>
+    <string name="cart_cleared">سبد خرید پاک شد</string>
+    <string name="total">مجموع</string>
+    <string name="you_save">شما صرفه‌جویی می‌کنید: %1$s</string>
+    <string name="proceed_to_checkout">تکمیل سفارش</string>
+    <string name="guest_access_limited">دسترسی مهمان محدود است</string>
+    <string name="need_account_to_order">برای ثبت سفارش باید حساب کاربری ایجاد کنید یا وارد شوید.</string>
+    <string name="sign_in_or_register">ورود یا ثبت‌نام</string>
+    <string name="cart_empty">سبد خرید شما خالی است</string>
+    <string name="empty_cart">سبد خرید شما خالی است</string>
+    <string name="empty_cart_message">چند مورد به سبد خرید خود اضافه کنید</string>
+    <string name="add_items_to_cart">برای شروع چند مورد خوشمزه اضافه کنید</string>
+    <string name="description">توضیحات</string>
+    <string name="special_instructions_cart">دستورالعمل‌های ویژه</string>
+    <string name="add_to_cart">افزودن به سبد</string>
+    <string name="added_to_cart_success">به سبد خرید اضافه شد!</string>
+    <string name="add_notes_for_order">توضیحات خود برای این سفارش را اضافه کنید...</string>
+    <string name="remove_item">حذف مورد</string>
+    <string name="increase_quantity">افزایش تعداد</string>
+    <string name="decrease_quantity">کاهش تعداد</string>
+    <string name="savings">صرفه‌جویی‌ها</string>
+    
+    <!-- Profile Screen -->
+    <string name="my_profile">پروفایل من</string>
+    <string name="save_profile">ذخیره</string>
+    <string name="edit">ویرایش</string>
+    <string name="personal_information">اطلاعات شخصی</string>
+    <string name="name">نام</string>
+    <string name="family_name">نام خانوادگی</string>
+    <string name="phone_number">شماره تلفن</string>
+    <string name="address">آدرس</string>
+    <string name="postal_code">کد پستی</string>
+    <string name="notification_preferences">تنظیمات اعلان‌ها</string>
+    <string name="receive_email_notifications">دریافت اعلان‌های ایمیلی</string>
+    <string name="receive_push_notifications">دریافت اعلان‌های پوش</string>
+    <string name="account_information">اطلاعات حساب کاربری</string>
+    <string name="account_type">نوع حساب کاربری</string>
+    <string name="last_login">آخرین ورود</string>
+    <string name="last_password_change">آخرین تغییر رمز عبور</string>
+    <string name="password_strength">قدرت رمز عبور</string>
+    <string name="change_password">تغییر رمز عبور</string>
+    <string name="reset_password">بازنشانی رمز عبور</string>
+    <string name="sign_out">خروج از حساب کاربری</string>
+    <string name="reset_password_title">بازنشانی رمز عبور</string>
+    <string name="reset_password_message">یک لینک بازنشانی رمز عبور به آدرس ایمیل شما (%1$s) ارسال خواهد شد. آیا می‌خواهید ادامه دهید؟</string>
+    <string name="send_reset_link">ارسال لینک بازنشانی</string>
+    <string name="role_label">نقش: %1$s</string>
+    <string name="phone">تلفن</string>
+    <string name="password_strength_very_weak">بسیار ضعیف</string>
+    <string name="password_strength_weak">ضعیف</string>
+    <string name="password_strength_fair">متوسط</string>
+    <string name="password_strength_good">خوب</string>
+    <string name="password_strength_strong">قوی</string>
+    <string name="password_strength_very_strong">خیلی قوی</string>
+    <string name="password_reset_email_sent">ایمیل بازیابی رمز عبور با موفقیت ارسال شد</string>
+    <string name="password_mismatch">رمزهای عبور مطابقت ندارند</string>
+    <string name="password_too_short">رمز عبور باید حداقل ۸ کاراکتر باشد</string>
+    <string name="password_too_weak">رمز عبور باید شامل حروف بزرگ، حروف کوچک، اعداد و نمادها باشد</string>
+    <string name="password_requirements">رمز عبور باید حداقل ۸ کاراکتر و شامل یک حرف بزرگ، یک حرف کوچک، یک عدد و یک نماد باشد</string>
+    <string name="guest_user">کاربر مهمان</string>
+    
+    <!-- Menu Screen -->
+    <string name="menu_title">منو</string>
+    <string name="categories">دسته‌بندی‌ها</string>
+    <string name="all_menu_items">همه موارد منو</string>
+    <string name="all_food_items">همه غذاها</string>
+    <string name="all">همه</string>
+    <string name="category_list">لیست دسته‌بندی</string>
+    <string name="price_format">₺%1$s</string>
+    <string name="no_food_items_found">هیچ غذایی در این دسته‌بندی یافت نشد</string>
+    <string name="out_of_stock">ناموجود</string>
+    <string name="item_currently_unavailable">این غذا در حال حاضر ناموجود است</string>
+    <string name="uncategorized">دسته‌بندی نشده</string>
+    <string name="sold_out">تمام شد</string>
+    
+    <!-- Navigation Drawer -->
+    <string name="welcome_to_sofrehmessina">به سفره مسینا خوش آمدید</string>
+    <string name="home">صفحه اصلی</string>
+    <string name="profile">پروفایل</string>
+    <string name="my_orders">سفارش‌های من</string>
+    <string name="admin">مدیر</string>
+    <string name="dashboard">داشبورد</string>
+    <string name="manage_categories">مدیریت دسته‌بندی‌ها</string>
+    <string name="manage_food_items">مدیریت اقلام غذایی</string>
+    <string name="manage_orders">مدیریت سفارشات</string>
+    <string name="contact_us">تماس با ما</string>
+    <string name="login_register">ورود / ثبت نام</string>
+    
+    <!-- Order History Screen -->
+    <string name="order_history">تاریخچه سفارشات</string>
+    <string name="all_orders">همه</string>
+    <string name="no_orders_found">هیچ سفارشی یافت نشد</string>
+    <string name="order_number">سفارش #%1$s</string>
+    <string name="order_item_quantity">%1$dx مورد #%2$s</string>
+    <string name="order_total">مجموع</string>
+    <string name="no_orders_yet">هنوز سفارشی ندارید</string>
+    <string name="browse_menu">مشاهده منو</string>
+    <string name="order_details">جزئیات سفارش</string>
+    <string name="items">موارد</string>
+    <string name="item_quantity">%1$dx %2$s</string>
+    <string name="item_note">یادداشت: %1$s</string>
+    <string name="order_items_count">%1$d مورد • %2$s</string>
+    <string name="notes">یادداشت‌ها: %1$s</string>
+    <string name="orders_close">بستن</string>
+    
+    <!-- Category Details Screen -->
+    <string name="no_food_items">هیچ غذایی یافت نشد</string>
+    <string name="check_back_later">بعداً برای افزودنی‌های جدید بررسی کنید</string>
+    <string name="back_to_categories">بازگشت به دسته‌بندی‌ها</string>
+    <string name="category">دسته‌بندی</string>
+    <string name="discount_details">جزئیات تخفیف</string>
+    <string name="buy_x_get_discount">%1$d مورد یا بیشتر بخرید تا این تخفیف را دریافت کنید</string>
+    
+    <!-- Checkout Screen -->
+    <string name="checkout">تکمیل سفارش</string>
+    <string name="delivery_address">آدرس تحویل</string>
+    <string name="special_instructions">دستورالعمل‌های ویژه (اختیاری)</string>
+    <string name="place_order">ثبت سفارش</string>
+    <string name="order_placed">سفارش با موفقیت ثبت شد</string>
+    <string name="order_success_message">سفارش شما با موفقیت ثبت شده است. می‌توانید سفارش خود را در بخش سفارشات پیگیری کنید.</string>
+    <string name="order_error">خطای سفارش</string>
+    <string name="order_error_message">خطایی در ثبت سفارش شما رخ داده است. لطفاً دوباره تلاش کنید.</string>
+    <string name="complete_your_order">سفارش خود را تکمیل کنید</string>
+    <string name="checkout_with_discounts">تکمیل سفارش با تخفیف‌ها: %1$s</string>
+    <string name="order_without_discounts">سفارش بدون تخفیف‌ها: %1$s</string>
+    <string name="add_more_items_for_discounts">موارد بیشتری اضافه کنید تا تخفیف‌ها فعال شوند!</string>
+    <string name="please_enter_delivery_address">لطفاً برای ادامه یک آدرس تحویل وارد کنید</string>
+    <string name="your_cart_empty">سبد خرید شما خالی است</string>
+    <string name="order_summary">خلاصه سفارش</string>
+    <string name="save_amount">ذخیره %1$s</string>
+    <string name="discount_info">اطلاعات تخفیف</string>
+    <string name="save_discount">ذخیره %1$s</string>
+    <string name="note">یادداشت: %1$s</string>
+    <string name="subtotal">جمع جزئی:</string>
+    <string name="discount">تخفیف:</string>
+    <string name="discount_summary">خلاصه تخفیف</string>
+    <string name="general">عمومی</string>
+    <string name="total_savings">کل پس‌انداز:</string>
+    <string name="payment_method_cash_on_delivery">روش پرداخت: پرداخت در محل</string>
+    <string name="delivery_details">جزئیات تحویل</string>
+    <string name="any_special_delivery_instructions">هرگونه دستورالعمل تحویل ویژه...</string>
+    <string name="each_item">هر کدام</string>
+    <string name="item_total">مجموع مورد</string>
+    <string name="debug">دیباگ: totalSavings = %1$s | Items: %2$d | Address: %3$s</string>
+    <string name="confirm_order">تأیید سفارش</string>
+    <string name="confirm_order_message">آیا مطمئن هستید که می‌خواهید این سفارش را ثبت کنید؟</string>
+    <string name="view_orders">مشاهده سفارشات</string>
+    <string name="limited_time_offer">پیشنهاد با زمان محدود</string>
+    <string name="item_discounts">تخفیف‌های مورد</string>
+    <string name="total_amount">مبلغ کل</string>
+    
+    <!-- Discount countdown strings -->
+    <string name="discount_countdown">تخفیف به زودی به پایان می‌رسد</string>
+    <string name="ends_in">پایان در %1$s</string>
+    <string name="hours_minutes">%1$dساعت %2$dدقیقه</string>
+    
+    <!-- Enhanced UI strings -->
+    <string name="sign_in_to_continue">برای ادامه وارد شوید</string>
+    <string name="email_required">ایمیل الزامی است</string>
+    <string name="fill_details_below">جزئیات خود را در زیر پر کنید</string>
+    <string name="welcome_to_sofreh_persian_food">به سفره غذای ایرانی خوش آمدید</string>
+    <string name="registration_success_message">حساب کاربری شما با موفقیت ایجاد شد. لطفا با اطلاعات کاربری خود وارد شوید.</string>
+    
+    <!-- Discount explanation strings -->
+    <string name="buy_x_or_more_for_discount">خرید %1$s یا بیشتر برای %2$s%% تخفیف</string>
+    <string name="limited_time_offer_discount">پیشنهاد محدود زمانی: %1$s%% تخفیف</string>
+    
+    <!-- Coupon related strings -->
+    <string name="have_a_coupon">کد تخفیف دارید؟</string>
+    <string name="enter_coupon_code">کد تخفیف را وارد کنید</string>
+    <string name="apply">اعمال</string>
+    <string name="coupon_applied">کد تخفیف اعمال شد</string>
+    <string name="remove_coupon">حذف</string>
+    <string name="invalid_coupon">کد تخفیف نامعتبر است</string>
+    <string name="coupon_discount">تخفیف کوپن</string>
+    
+    <!-- Food details screen -->
+    <string name="food_details">جزئیات غذا</string>
+    <string name="favorite">مورد علاقه</string>
+    <string name="available">موجود</string>
+    <string name="unavailable">ناموجود</string>
+    <string name="quantity">تعداد</string>
+    <string name="special_instructions_hint">دستورالعمل‌های ویژه را اینجا اضافه کنید...</string>
+    
+    <!-- Order Status -->
+    <string name="status_pending">در انتظار</string>
+    <string name="status_confirmed">تایید شده</string>
+    <string name="status_preparing">در حال آماده‌سازی</string>
+    <string name="status_ready">آماده</string>
+    <string name="status_delivered">تحویل داده شده</string>
+    <string name="status_cancelled">لغو شده</string>
+</resources> 

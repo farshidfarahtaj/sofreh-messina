@@ -1,0 +1,205 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions for security rules
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && 
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'ADMIN';
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    function isNotDisabled() {
+      return isAuthenticated() && 
+        !exists(/databases/$(database)/documents/users/$(request.auth.uid)/disabled) || 
+        !get(/databases/$(database)/documents/users/$(request.auth.uid)).data.disabled;
+    }
+    
+    // Validate document contents
+    function isValidUser(user) {
+      return user.size() <= 20 && 
+        'name' in user && user.name is string &&
+        'email' in user && user.email is string &&
+        'role' in user && user.role in ['ADMIN', 'USER', 'GUEST'];
+    }
+    
+    // Default deny all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    // Users collection
+    match /users/{userId} {
+      // Fix for registration: Allow creating a user document if the user ID matches auth ID
+      // and the document contains valid user data
+      allow create: if isAuthenticated() && 
+                     request.auth.uid == userId &&
+                     isValidUser(request.resource.data);
+      
+      // Users can read and update only their own data, admins can read all
+      allow read: if isOwner(userId) || isAdmin();
+      allow update: if (isOwner(userId) && isNotDisabled() && 
+                     isValidUser(request.resource.data)) || isAdmin();
+                    
+      // Only admins can delete user accounts
+      allow delete: if isAdmin();
+    }
+    
+    // Categories collection
+    match /categories/{categoryId} {
+      // Anyone can read categories
+      allow read: if true;
+      
+      // Only admins can create, update, delete
+      allow create, update, delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // Food items collection
+    match /food/{foodId} {
+      // Anyone can read food items
+      allow read: if true;
+      
+      // Only admins can manage food items
+      allow create, update, delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // Orders collection
+    match /orders/{orderId} {
+      // Users can read their own orders, admins can read all
+      allow read: if isAuthenticated() && isNotDisabled() && 
+                   (request.auth.uid == resource.data.userId || isAdmin());
+      
+      // Only authenticated, non-disabled users can create orders
+      allow create: if isAuthenticated() && isNotDisabled() && 
+                     request.resource.data.userId == request.auth.uid &&
+                     request.resource.data.status == 'PENDING';
+                     
+      // Only admins can update order status
+      allow update: if isAdmin() && isNotDisabled();
+      
+      // Nobody can delete orders (for audit purposes)
+      allow delete: if false;
+    }
+    
+    // Reviews collection
+    match /reviews/{reviewId} {
+      // Anyone can read reviews
+      allow read: if true;
+      
+      // Only authenticated users can create reviews for orders they've placed
+      allow create: if isAuthenticated() && isNotDisabled() &&
+                     request.resource.data.userId == request.auth.uid;
+                     
+      // Users can only update their own reviews
+      allow update: if isAuthenticated() && isNotDisabled() &&
+                     resource.data.userId == request.auth.uid;
+                     
+      // Only admins can delete reviews
+      allow delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // Banners collection - Add missing rules
+    match /banners/{bannerId} {
+      // Allow public read access to banners
+      allow read: if true;
+      
+      // Only admins can create, update, delete banners
+      allow create, update, delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // Discounts collection
+    match /discounts/{discountId} {
+      // Anyone can read active discounts
+      allow read: if true;
+      
+      // Only admins can manage discounts
+      allow write: if isAdmin() && isNotDisabled();
+    }
+
+    // Analytics collection - highly restricted
+    match /analytics/{document=**} {
+      // Only admins can read analytics
+      allow read: if isAdmin() && isNotDisabled();
+      
+      // Server-side only writes (deny client writes)
+      allow write: if false;
+    }
+    
+    // Special case for discount analytics subcollection
+    match /analytics/discounts/{document} {
+      // Only admins can read 
+      allow read: if isAdmin() && isNotDisabled();
+      
+      // Authenticated users can create discount analytics entries
+      allow create: if isAuthenticated() && isNotDisabled();
+      
+      // Only admins can update or delete
+      allow update, delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // FCM tokens collection
+    match /fcmTokens/{userId} {
+      // Users can only manage their own tokens
+      allow read, write: if isOwner(userId) && isNotDisabled();
+    }
+    
+    // App Settings collection for currency management
+    match /appSettings/{document} {
+      // Anyone can read app settings (to get default currency)
+      allow read: if true;
+      
+      // Only admins can update app settings (currency, etc.)
+      allow write: if isAdmin() && isNotDisabled();
+    }
+    
+    // Security audit collection for logging security events
+    match /security_audit/{document} {
+      // Only authenticated users can write security audit logs
+      allow create: if isAuthenticated();
+      
+      // Only admins can read security audit logs
+      allow read, update, delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // Discount usage tracking collection
+    match /discount_usage/{document} {
+      // Authenticated users can create and read their own usage records
+      allow create, read: if isAuthenticated() && 
+                          (request.resource.data.userId == request.auth.uid || isAdmin());
+      
+      // Only admins can read all, update, or delete
+      allow update, delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // Discount analytics collection
+    match /discount_analytics/{document} {
+      // Only admins can read analytics
+      allow read: if isAdmin() && isNotDisabled();
+      
+      // Authenticated users can create analytics entries
+      allow create: if isAuthenticated();
+      
+      // Only admins can update or delete
+      allow update, delete: if isAdmin() && isNotDisabled();
+    }
+    
+    // Allow access to any subcollection of discounts
+    match /discounts/{discountId}/{subCollection}/{document} {
+      // Authenticated users can read their relevant discount data
+      allow read: if isAuthenticated();
+      
+      // Authenticated users can create usage records
+      allow create: if isAuthenticated() && request.resource.data.userId == request.auth.uid;
+      
+      // Only admins can update or delete
+      allow update, delete: if isAdmin() && isNotDisabled();
+    }
+  }
+}
+

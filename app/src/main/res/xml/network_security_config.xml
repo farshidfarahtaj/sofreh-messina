@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Base configuration that all connections use -->
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <!-- Trust pre-installed system CAs -->
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <!-- Domain specific configurations -->
+    <domain-config>
+        <!-- Apply to Firebase and your API domains -->
+        <domain includeSubdomains="true">firestore.googleapis.com</domain>
+        <domain includeSubdomains="true">firebase.googleapis.com</domain>
+        <domain includeSubdomains="true">firebase-database.googleapis.com</domain>
+        <domain includeSubdomains="true">firebase-storage.googleapis.com</domain>
+        
+        <!-- Pin the Google/Firebase certificates - replace with actual hashes in production -->
+        <pin-set expiration="2024-12-31">
+            <!-- Example pin hash - replace with the actual certificate hashes -->
+            <pin digest="SHA-256">7HIpactkIAq2Y49orFOOQKurWxmmSFZhBCoQYcRhJ3Y=</pin>
+            <!-- Add backup pin -->
+            <pin digest="SHA-256">YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config> 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- Legacy colors for backward compatibility -->
+    <color name="purple_500">#006C4C</color>
+    <color name="notification_color">#006C4C</color>
+    
+    <!-- Light Theme Colors -->
+    <color name="md_theme_light_primary">#006C4C</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#89F8C7</color>
+    <color name="md_theme_light_onPrimaryContainer">#002114</color>
+    <color name="md_theme_light_secondary">#4C6358</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#CFE9DB</color>
+    <color name="md_theme_light_onSecondaryContainer">#092017</color>
+    
+    <!-- Dark Theme Colors -->
+    <color name="md_theme_dark_primary">#6CDBAB</color>
+    <color name="md_theme_dark_onPrimary">#003825</color>
+    <color name="md_theme_dark_primaryContainer">#005138</color>
+    <color name="md_theme_dark_onPrimaryContainer">#89F8C7</color>
+    <color name="md_theme_dark_secondary">#B3CCBF</color>
+    <color name="md_theme_dark_onSecondary">#1F352B</color>
+    <color name="md_theme_dark_secondaryContainer">#354B41</color>
+    <color name="md_theme_dark_onSecondaryContainer">#CFE9DB</color>
+    <color name="ic_launcher_background">#FF9800</color>
+</resources>

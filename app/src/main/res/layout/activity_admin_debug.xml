@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.screens.debug.AdminDebugActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Debug Tools"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Admin"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/admin_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/admin_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/admin_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/create_admin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Admin Account"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fix Permissions"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If you're having permission issues, use this button to grant admin privileges to your current account:"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/fix_current_user_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fix Current User Admin Status"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout> 
